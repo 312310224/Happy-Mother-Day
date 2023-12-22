@@ -1,0 +1,113 @@
+:root{
+    --bg-color: #1f242d;
+    --secondary-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+    --hover: cyan;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-family: 'poppins',sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+    padding: 40px 80px;
+    height: 50vh;
+}
+
+.depan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.depan .img-depan{
+    width: 100%;
+    height: 100%;
+    border-radius: 25% 25% 25% 25%;
+}
+
+.baca{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.baca-selengkapnya{
+    margin-top: 50px;
+    display: inline;
+    padding: 15px 15px;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 5px var(--main-color),
+    0 0 25px var(--main-color);
+    font-size: 30px;
+    color: var(--secondary-bg-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+}
+
+.baca-selengkapnya:hover{
+    box-shadow: 0 0 5px var(--hover),
+    0 0 25px var(--hover), 0 0 50px var(--hover),
+    0 0 100px var(--hover), 0 0 200px;
+}
+
+.ucapan{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ucapan-cp h1{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.ucapan-cp p{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.ucapan-cp p span{
+    color: var(--main-color);
+}
+
+.foto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto img{
+    width: 100%;
+    height: 100%;
+    border-radius: 75%;
+}
+
+
+@media (max-width: 768px) {
+    body {
+      padding: 20px;
+    }
+  
+    .depan .img-depan {
+      border-radius: 10%; 
+    }
+
+    .gambar-besar {
+        width: 100%;
+        height: auto;
+      }
+  
+  }
+
